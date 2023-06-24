@@ -1,3 +1,5 @@
+'use strict';
+
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215)
     .toString(16)
@@ -9,7 +11,7 @@ const stopButtonEl = document.querySelector('[data-stop]');
 
 let intervalId = null;
 
-startButtonEl.addEventListener('click1', () => {
+startButtonEl.addEventListener('click', () => {
   startButtonEl.disabled = true;
   stopButtonEl.disabled = false;
 
